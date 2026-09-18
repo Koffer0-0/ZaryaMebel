@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1400" width="1200" height="1400">
+  <defs>
+    <linearGradient id="h" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0" stop-color="#f4ede3"/><stop offset="1" stop-color="#d9cbb8"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="1400" fill="url(#h)"/>
+  <g fill="#9b7748" opacity=".38">
+    <rect x="90" y="180" width="470" height="330" rx="10"/>
+    <rect x="90" y="545" width="470" height="150" rx="10"/>
+    <rect x="595" y="180" width="240" height="515" rx="10"/>
+    <rect x="870" y="180" width="240" height="240" rx="10"/>
+    <rect x="870" y="455" width="240" height="240" rx="10"/>
+    <rect x="90" y="800" width="1020" height="30" rx="8"/>
+    <rect x="90" y="865" width="300" height="440" rx="10"/>
+    <rect x="425" y="865" width="300" height="440" rx="10"/>
+    <rect x="760" y="865" width="350" height="440" rx="10"/>
+  </g>
+  <g fill="none" stroke="#8a6538" stroke-width="4" opacity=".8">
+    <rect x="90" y="180" width="470" height="330" rx="10"/>
+    <rect x="90" y="545" width="470" height="150" rx="10"/>
+    <rect x="595" y="180" width="240" height="515" rx="10"/>
+    <rect x="870" y="180" width="240" height="240" rx="10"/>
+    <rect x="870" y="455" width="240" height="240" rx="10"/>
+    <rect x="90" y="865" width="300" height="440" rx="10"/>
+    <rect x="425" y="865" width="300" height="440" rx="10"/>
+    <rect x="760" y="865" width="350" height="440" rx="10"/>
+  </g>
+  <text x="600" y="115" font-family="system-ui, sans-serif" font-size="42" font-weight="800" fill="#8a6538" text-anchor="middle" letter-spacing="2">ГЛАВНОЕ ФОТО</text>
+  <text x="600" y="1370" font-family="system-ui, sans-serif" font-size="26" fill="#8a6538" text-anchor="middle" opacity=".75">img/hero.jpg — вертикальное фото кухни</text>
+</svg>
