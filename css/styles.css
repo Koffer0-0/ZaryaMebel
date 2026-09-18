@@ -175,7 +175,7 @@ ul,ol{ margin:0; padding:0; list-style:none; }
 
 .hero__media{ position:relative; }
 .hero__media img{
-  width:100%; height:auto; aspect-ratio:6/7; object-fit:cover;
+  width:100%; height:auto; aspect-ratio:3/4; object-fit:cover;
   border-radius:var(--r-lg); box-shadow:var(--shadow-2);
 }
 .hero__badge{
@@ -224,13 +224,14 @@ ul,ol{ margin:0; padding:0; list-style:none; }
 .chip:hover{ border-color:var(--ink); }
 .chip.is-on{ background:var(--ink); color:#fff; border-color:var(--ink); }
 
-.grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
+/* 4 колонки: фото вертикальные, при 3 колонках секция выходила бы слишком длинной */
+.grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:16px; }
 .grid__empty{ text-align:center; color:var(--muted); padding:40px 0; }
 
 .tile{
   position:relative; overflow:hidden; border-radius:var(--r-lg);
   background:#e9e3da; border:0; padding:0; cursor:zoom-in; display:block;
-  aspect-ratio:4/3; width:100%;
+  aspect-ratio:3/4; width:100%;   /* портретные плитки под вертикальные фото */
 }
 .tile img{
   width:100%; height:100%; object-fit:cover;
@@ -427,7 +428,8 @@ body.no-scroll{ overflow:hidden; }
    Адаптив
    ============================================================ */
 @media (max-width:1080px){
-  .cards, .grid{ grid-template-columns:repeat(2,1fr); }
+  .cards{ grid-template-columns:repeat(2,1fr); }
+  .grid{ grid-template-columns:repeat(3,1fr); }
   .steps{ grid-template-columns:repeat(2,1fr); row-gap:34px; }
   .mat__in, .cta__in{ grid-template-columns:1fr; gap:44px; }
   .hero__in{ gap:44px; }
@@ -462,7 +464,7 @@ body.no-scroll{ overflow:hidden; }
   .hero{ padding:36px 0 64px; }
   .hero__in{ grid-template-columns:1fr; }
   .hero__media{ order:-1; }
-  .hero__media img{ aspect-ratio:4/3; }
+  .hero__media img{ aspect-ratio:4/5; }
   .hero__badge{ left:auto; right:14px; bottom:-18px; }
 
   .facts__in{ grid-template-columns:repeat(2,1fr); }
@@ -495,7 +497,8 @@ body.no-scroll{ overflow:hidden; }
 
 @media (max-width:620px){
   body{ font-size:16px; }
-  .cards, .grid{ grid-template-columns:1fr; }
+  .cards{ grid-template-columns:1fr; }
+  .grid{ grid-template-columns:repeat(2,1fr); gap:12px; }
   .steps{ grid-template-columns:1fr; }
   .facts__in{ grid-template-columns:1fr; }
   .fact{ border-left:0; border-top:1px solid var(--line); text-align:left; padding:22px 4px; }
